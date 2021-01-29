@@ -1,0 +1,18 @@
+<div class="delete-confirm">
+  <div class="delete-confirm_header" fxLayout="row" fxLayoutAlign="space-between center">
+    <div class="title">
+      <p>Delete drink</p>
+    </div>
+    <div>
+      <mat-icon (click)="closeDialog()">close</mat-icon>
+    </div>
+  </div>
+  <div class="content">
+    <h4>Do you want to delete drink?</h4>
+  </div>
+  <div class="btn-group">
+    <button mat-raised-button (click)="closeDialog()">Cancel</button>
+    <button mat-raised-button class="submit" (click)="confirm()">Delete</button>
+  </div>
+</div>
+

@@ -1,0 +1,32 @@
+.error-main{
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  .error-content {
+    text-align: center;
+    margin-bottom: 2em;
+    .button {
+      justify-content: center;
+      display: flex;
+    }
+  }
+  h1{
+    font-weight: bold;
+    color: #444444;
+    font-size: 200px;
+    text-shadow: 2px 4px 5px #6E6E6E;
+  }
+  h6{
+    color: #303438;
+    font-size: 36px;
+    margin: 38px 0 20px 0;
+  }
+  p{
+    color: #9897A0;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,64 @@
+.delete-confirm {
+  .delete-confirm_header {
+    padding: 24px;
+    border-bottom: 1px solid #e3e8e7;
+    .title {
+      p {
+        color: #252928;
+        margin: 0 !important;
+        font-weight: 550;
+      }
+    }
+    mat-icon {
+      cursor: pointer;
+    }
+  }
+  .content {
+    padding: 40px 0;
+    h4{
+      color: #252928;
+      margin: 0 !important;
+      text-align: center;
+    }
+  }
+  .alert {
+    color: #fa5c7c;
+  }
+  .btn {
+    border-top: 1px solid #e3e8e7;
+    .button {
+      cursor: pointer;
+      width: 100%;
+      padding: 18px 0;
+      background-color: #ffffff !important;
+      text-align: center;
+    }
+  }
+  .btn-group {
+    width: 100%;
+    button {
+      height: 54px;
+      width: 50%;
+      text-align: center;
+      color: #252928;
+    }
+
+
+  }
+  ::ng-deep {
+    .mat-button-disabled {
+      background-color: #ffffff !important;
+      color: #a6adab !important;
+    }
+  }
+}
+
+::ng-deep {
+  .mat-form-field-outline-thick {
+    color: rgb(0, 195, 137) !important;
+  }
+  .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid
+    .mat-form-field-outline-thick {
+    color: red !important;
+  }
+}

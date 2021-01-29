@@ -1,0 +1,85 @@
+.drink-container{
+  .drink-header{
+    padding: 20px 32px;
+    border-bottom: 1.5px solid rgb(237, 240, 240);
+    .title {
+      h4 {
+        color: #252928;
+        margin: 0 !important;
+      }
+    }
+    mat-icon {
+      cursor: pointer;
+      height: 24px;
+      width: 24px;
+    }
+  }
+  textarea{
+    min-height: 4rem;
+  }
+  .drink-content{
+    padding: 24px;
+    mat-form-field{
+      width: 100%;
+    }
+  }
+  .submit-btn {
+    border-top: 1px solid #cdd4d2;
+    width: 100%;
+    padding: 32px 0 16px 0;
+    button {
+      text-align: center;
+      color: #ffffff;
+      width: 320px;
+      height: 48px;
+      border-radius: 6px;
+      border-radius: 6px;
+      background-color: #00c389;
+      margin: auto;
+    }
+    .update {
+      width: 45%;
+      height: 48px;
+      border-radius: 6px;
+      background-color: #00c389;
+      text-align: center;
+      color: #ffffff;
+    }
+    .cancel {
+      width: 45%;
+      height: 48px;
+      border-radius: 6px;
+      background-color: #ffffff;
+      border: solid 1px #4b5250;
+      text-align: center;
+      color: #252928;
+    }
+    .upload-progress {
+      margin-top: 5px;
+
+      text-align: center;
+      color: #888f8d;
+    }
+  }
+}
+::ng-deep {
+  .mat-form-field-outline-thick {
+    color: rgb(0, 195, 137) !important;
+  }
+  .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid
+    .mat-form-field-outline-thick {
+    color: red !important;
+  }
+  .mat-form-field-disabled {
+    background-color: #f2f7f6;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    .mat-form-field-wrapper {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .length {
+      background-color: transparent !important;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<div class="drink-container">
+  <div class="drink-header" fxLayout="row" fxLayoutAlign="space-between center">
+    <div class="title">
+      <h4>Daily Drinks</h4>
+    </div>
+    <div>
+      <mat-icon (click)="closeDialog()">close</mat-icon>
+    </div>
+  </div>
+  <div class="drink-content">
+    <form [formGroup]="formGroup">
+      <mat-form-field class="example-full-width" [appearance]="'outline'">
+        <mat-label>Drink name</mat-label>
+        <textarea matInput type="text" formControlName="name"></textarea>
+      </mat-form-field>
+      <mat-form-field class="example-full-width"[appearance]="'outline'">
+        <mat-label>Drink price</mat-label>
+        <input matInput type="number" min="1" formControlName="price">
+        <div class="length matSuffix" matSuffix>USD</div>
+      </mat-form-field>
+    </form>
+  </div>
+  <div class="submit-btn" fxLayout="row" fxLayoutAlign="center center">
+    <button  mat-raised-button class="cancel" (click)="closeDialog()">Cancel</button>
+    <button  mat-raised-button class="update" [disabled]="!formGroup.valid" (click)="addDrink()" *ngIf="!update">Add drink</button>
+    <button  mat-raised-button class="update" [disabled]="!formGroup.valid" (click)="updateDrink()" *ngIf="update">Update drink</button>
+  </div>
+</div>

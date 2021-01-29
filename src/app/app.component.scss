@@ -1,0 +1,20 @@
+.app-container{
+  background-color: #F3F7F9;
+  height: 100vh;
+  overflow: hidden;
+  .navbar{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 99;
+    height: 70px;
+    border-bottom: 1.5px solid rgb(237, 240, 240);
+  }
+  .content{
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+  }
+}
+

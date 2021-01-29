@@ -1,0 +1,103 @@
+.home-container{
+  padding: 1.5rem 10%;
+  mat-card{
+    height: calc(100vh - 150px);
+    mat-card-content{
+      height: 80%;
+      overflow: auto;
+      .no-content{
+        height: 100%;
+        h5{
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: #898989;
+        }
+      }
+    }
+  }
+  .add-drink{
+    background-color: #00C389;
+    color: white;
+  }
+  .home-content{
+    .table-responsive{
+      margin-top: 1rem;
+      border-radius: 4px;
+      overflow: auto;
+      width: 100%;
+      background-color: #fff;
+      table{
+        min-width: 100%;
+        th{
+          font-weight: bold !important;
+        }
+        .position{
+          margin-left: 0.5rem;
+          padding-left: 0.5rem;
+          text-align: center;
+          font-weight: bold;
+        }
+        th{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        color: #1E1E1E;
+        }
+        .mat-column-no {
+          width: 10%;
+        }
+        .mat-column-name {
+          width: 50%;
+        }
+        .mat-column-action {
+          th{
+            text-align: center !important;
+          }
+          width: 20%;
+          button{
+            margin-right: 1rem;
+          }
+        }
+        tr:hover {
+          background-color: #efefef !important;
+          cursor: pointer;
+        }
+
+        tr.table-row:not(.table-row):active {
+          background: #efefef !important;
+        }
+      }
+      .mat-elevation-z8{
+        box-shadow: none;
+      }
+      .table-end{
+        padding: 1.5rem;
+        div{
+          cursor: pointer;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          text-align: center;
+          color: #898989;
+        }
+      }
+    }
+  }
+}
+
+::ng-deep .custom-mat-dialog {
+	.mat-dialog-container {
+        padding : 0 !important;
+        overflow: hidden !important;
+	}
+	.mat-tab-body-content {
+		overflow-x: hidden !important;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+  .home-container{
+    padding: 1.5rem 2.5%;
+  }
+}
